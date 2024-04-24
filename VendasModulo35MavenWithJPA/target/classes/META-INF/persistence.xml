@@ -17,7 +17,7 @@
 		
 		<properties>
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" /> <!-- DB Driver -->
-            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:15432/vendas_online" /> <!-- BD Mane -->
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://192.168.1.42:15432/vendas_online" /> <!-- BD Mane -->
             <property name="javax.persistence.jdbc.user" value="postgres" /> <!-- DB User -->
             <property name="javax.persistence.jdbc.password" value="admin" /> <!-- DB Password -->
 
@@ -44,7 +44,7 @@
 		
 		<properties>
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" /> <!-- DB Driver -->
-            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:15432/vendas_online_2" /> <!-- BD Mane -->
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://192.168.1.42:15432/vendas_online_2" /> <!-- BD Mane -->
             <property name="javax.persistence.jdbc.user" value="postgres" /> <!-- DB User -->
             <property name="javax.persistence.jdbc.password" value="admin" /> <!-- DB Password -->
 
@@ -68,7 +68,7 @@
 		
 		<properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" /> <!-- DB Driver -->
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/vendas_online" /> <!-- BD Mane -->
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://192.168.1.42:3306/vendas_online" /> <!-- BD Mane -->
             <property name="javax.persistence.jdbc.user" value="admin" /> <!-- DB User -->
             <property name="javax.persistence.jdbc.password" value="admin" /> <!-- DB Password -->
 

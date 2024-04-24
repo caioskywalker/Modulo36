@@ -34,6 +34,7 @@ public class GenericDao<T extends Persistente, E extends Serializable> implement
 	@Override
 	public T cadastrar(T entity) throws TipoChaveNaoEncontradaException, DaoException {
 		openConnection();
+		
 		entityManager.persist(entity);
 		entityManager.getTransaction().commit();
 		closeConnection();

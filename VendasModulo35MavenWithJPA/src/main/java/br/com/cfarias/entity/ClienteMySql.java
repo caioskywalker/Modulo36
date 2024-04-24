@@ -34,9 +34,6 @@ public class ClienteMySql implements Persistente{
 	@Column(name = "telefone", nullable = false)
 	private Long telefone;
 	
-	@OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL)
-	private Set<Endereco> enderecos;
-	
 
 	public ClienteMySql( String nome, Long cpf, Long telefone, Set<Endereco> enderecos) {
 		super();
@@ -44,9 +41,14 @@ public class ClienteMySql implements Persistente{
 		this.nome = nome;
 		this.cpf = cpf;
 		this.telefone = telefone;
-		this.enderecos = enderecos;
+		
 	}
+	
+	
 
+	public ClienteMySql() {
+		
+	}
 
 	public Long getId() {
 		return idCliente;
@@ -88,18 +90,5 @@ public class ClienteMySql implements Persistente{
 	}
 
 
-	public Set<Endereco> getEnderecos() {
-		return enderecos;
-	}
-
-
-	public void setEnderecos(Set<Endereco> enderecos) {
-		this.enderecos = enderecos;
-	}
-	
-	public void addEndereco(Endereco endereco) {
-		enderecos = new HashSet<Endereco>();
-		enderecos.add(endereco);
-	}
 
 }

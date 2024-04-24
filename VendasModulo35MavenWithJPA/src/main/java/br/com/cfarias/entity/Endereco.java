@@ -50,7 +50,6 @@ public class Endereco implements Persistente{
 		
 	}
 	
-	
 
 	public Long getId() {
 		return idEndereco;

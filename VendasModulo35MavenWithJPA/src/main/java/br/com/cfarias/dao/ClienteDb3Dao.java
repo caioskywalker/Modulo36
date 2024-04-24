@@ -6,7 +6,7 @@ import br.com.cfarias.entity.ClienteMySql;
 
 public class ClienteDb3Dao extends GenericDb3Dao<ClienteMySql, Long> implements IClienteDao<ClienteMySql> {
 
-	public ClienteDb3Dao(Class<ClienteMySql> persistenteClass) {
+	public ClienteDb3Dao() {
 		super(ClienteMySql.class);
 		
 	}
